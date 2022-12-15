@@ -1,0 +1,113 @@
+html,
+body {
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, white, rgb(179, 218, 250));
+}
+
+footer {
+    margin-top: auto;
+}
+
+.search {
+    margin-left: -50px;
+}
+
+.avatar {
+    width: 250px;
+}
+
+i {
+    color: black;
+}
+.profil-box{
+
+    width: 150px;
+    margin-top: 5%;
+    z-index: 1;
+    position: absolute;
+    right: 12%;
+}
+.profil-box>div {
+    display: none;
+
+}
+
+.list-group-item>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.list-group-item>a:hover {
+    text-decoration: none;
+    color: black;
+
+}
+
+.sidebar {
+    display: none;
+    width: 200px;
+    /* padding-top: 100px; */
+    height: 100%;
+    background-image: linear-gradient(to right, white, rgb(236, 246, 254));
+}
+
+.sidebar i {
+    padding-right: 20px;
+}
+
+.sidebar-link {
+
+    padding: 20px;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* footer {
+    position:none;
+    bottom: 0;
+    width: 100%;
+} */
+.form-group .icon {
+    padding-left: 2.375rem;
+}
+
+.form-group .form-control-icon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.registration-form {
+    display: none;
+}
+/* .registration-form .login-form {
+   width: 300px;
+} */
+.error-page{
+    margin: auto;
+}
+.vertical-form .vertical-form-icon{
+    height: 600px;
+}
+.time-line{
+    display: none;
+}

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/indexStayle.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="page">
+        <nav class="navbar navbar-light bg-light shadow-sm">
+            <div class="container">
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <a class="navbar-brand">Navbar</a> -->
+                <form class="form-inline search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="avatar row">
+                    <div class="col-3 pr-1 pl-0">
+                        <img src="/images/avatar.png" class="rounded-circle img-fluid"
+                            style="width: 50px;height:50px ;" />
+                    </div>
+                    <div class="col-5 name pl-0">
+                        <h6>User Name</h6>
+                        <h6>User Role</h6>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </nav>
+        <div class="profil-box">
+            <div class="shadow bg-white rounded p-3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Settings</a></li>
+                    <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content row bg-light">
+            <ul class="col-2 sidebar list-group shadow-sm">
+                <div class="mb-4 mt-2 text-center">
+                    <img src="/images/tu-logo.png" class="img-fluid logo" style="width: 70px;height:70px ;" />
+                </div>
+                <li class="p-3 mb-2 list-group-item">
+                    <a class="sidebar-link " href="/pages/index.html">
+                        <i class='bx bxs-dashboard'></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+                    <a class="sidebar-link" href="/pages/statistics.html">
+                        <i class='bx bx-bar-chart-alt'></i><span>Statistics</span>
+                    </a>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+                    <a class="sidebar-link" href="/pages/calendar.html">
+                        <i class='bx bx-calendar'></i><span>Calendar</span>
+                    </a>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+                    <!-- <a class="sidebar-link" href="#0">
+                    
+                </a> -->
+                    <a class="forms sidebar-link dropdown-toggle">
+                        <i class='bx bxs-layout'></i><span>Forms</span>
+                    </a>
+                    <ul class="menu list-group list-group-flush">
+                        <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Inputs</a></li>
+                        <li class="list-group-item text-center"><a href="/pages/layouts.html">Layouts</a></li>
+                        <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
+                        <li class="list-group-item text-center"><a href="/pages/login.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+                    <a class="sidebar-link" href="/pages/fonts.html">
+                        <i class='bx bxs-edit'></i><span>Fonts</span>
+                    </a>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+                    <a class="sidebar-link" href="/pages/tables.html">
+                        <i class='bx bx-table'></i><span>Tables</span>
+                    </a>
+                </li>
+                <li class="p-3 mb-2 list-group-item">
+
+                    <a class="sidebar-link" href="/pages/settings.html">
+                        <i class='bx bxs-cog'></i><span>Settings</span>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="col-8 container mb-4">
+                <div class="row mt-5">
+                    <div class="col p-3 pt-3 mb-5  mr-2 shadow bg-white rounded w-50 text-center">
+                        <div class="bg-light p-2 mt-3 rounded">
+                            <h2 class="mt-auto p-3">50</h2>
+                            <p>some text</p>
+                        </div>
+                    </div>
+                    <div class="col p-3 pt-3 mb-5 mr-2 shadow bg-white rounded w-50 text-center">
+                        <div class="bg-light p-2 mt-3 rounded">
+                            <h2 class="mt-auto p-3">200</h2>
+                            <p>some text</p>
+                        </div>
+                    </div>
+                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded">
+                        <div>
+                            <canvas id="pie-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded w-50">
+                        <div>
+                            <canvas id="line-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded">
+                        <div>
+                            <canvas id="bar-chart"></canvas>
+                          </div>
+                    </div>   
+                </div>
+                <div class="row mt-5 shadow bg-white rounded">
+                    <div class="col p-3 mb-5 mr-2 w-50">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <img src="/images/avatar.png" class="rounded-circle img-fluid"
+                            style="width: 50px;height:50px ;" />
+                            <span>User 1</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <img src="/images/avatar.png" class="rounded-circle img-fluid"
+                            style="width: 50px;height:50px ;" />
+                            <span>User 1</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                    <div class="col p-3 mb-5 mr-2 w-50">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <img src="/images/avatar.png" class="rounded-circle img-fluid"
+                            style="width: 50px;height:50px ;" />
+                            <span>User 1</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <img src="/images/avatar.png" class="rounded-circle img-fluid"
+                            style="width: 50px;height:50px ;" />
+                            <span>User 1</span>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer bg-white text-center footer-position">
+                <div class="footer-copyright text-center py-3">
+                    Taibah University - Deanship of Information Technology © 2022
+                </div>
+            </footer>
+
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+            <script src="/js/jquery-3.6.1.min.js"></script>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="/js/index.js"></script>
+</body>
+
+</html>
