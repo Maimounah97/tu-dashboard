@@ -13,6 +13,13 @@ body {
     background-image: linear-gradient(to right, white, rgb(179, 218, 250));
 }
 
+.user-info{
+    padding-top: 8px;
+}
+.user-info>h6{
+    font-size: 12px;
+}
+
 footer {
     margin-top: auto;
 }
@@ -29,12 +36,11 @@ i {
     color: black;
 }
 .profil-box{
-
     width: 150px;
     margin-top: 5%;
     z-index: 1;
     position: absolute;
-    right: 12%;
+    left: 22%;
 }
 .profil-box>div {
     display: none;
@@ -56,7 +62,7 @@ i {
 .sidebar {
     display: none;
     width: 200px;
-    /* padding-top: 100px; */
+    padding-top: 100px;
     height: 100%;
     background-image: linear-gradient(to right, white, rgb(236, 246, 254));
 }
