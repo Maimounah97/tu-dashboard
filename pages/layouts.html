@@ -17,9 +17,6 @@
     <div class="page">
         <nav class="navbar navbar-light bg-light shadow-sm">
             <div class="container">
-                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <!-- <a class="navbar-brand">Navbar</a> -->
                 <div class="avatar row">
                     <div class="col-3 pr-1 pl-0">
@@ -36,12 +33,12 @@
                     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <div class="text-center">
-                    <img src="/images/tu-logo.png" class="img-fluid logo" style="width: 50px;height:50px ;" />
+                    <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
                 </div>
             </div>
         </nav>
         <div class="profil-box">
-            <div class="shadow bg-white rounded p-3">
+            <div class="shadow bg-white rounded">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Settings</a></li>
                     <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
@@ -158,6 +155,49 @@
                             </div>
                         </form>
                     </div>
+                    <div class="mt-5 mb-5 mx-2 shadow bg-white rounded p-4">
+                        <form  class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <label for="exampleInputName">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputName"
+                                        aria-describedby="nameHelp" placeholder="Enter You'r Name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid name.
+                                          </div>
+                                </div>
+                                <div class="col form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email.
+                                          </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="password form-control" id="exampleInputPassword1"
+                                        placeholder="Password" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid password.
+                                          </div>
+                                </div>
+                                <div class="col form-group">
+                                    <label for="exampleInputPasswordConfirm">Confirm Password</label>
+                                    <input type="password" class="c-password form-control" id="exampleInputPasswordConfirm"
+                                        placeholder="Password" required>
+                                        <div class="invalid-feedback password-validation">
+                                            Passwords do not match.
+                                          </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-2 mb-4">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="row mx-auto w-75">
                     <div class="vertical-form mt-5 mb-5 mx-2 shadow bg-white rounded p-4 col-sm ">
@@ -227,6 +267,22 @@
                 Taibah University - Deanship of Information Technology © 2022
             </div>
         </footer>
+        <script>
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            </script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>

@@ -9,6 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/css/dropify.min.css"
+        integrity="sha512-1le5umV712TnW47Lwf6Ug6kkZk1g6rPGOREBLKG8SvrFCNuCYPlCwwxIXBmRsi0q2BTWvbOrHiHfz0LvkX+1VA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/styles/indexStayle.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -17,9 +22,6 @@
     <div class="page">
         <nav class="navbar navbar-light bg-light shadow-sm">
             <div class="container">
-                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
                 <!-- <a class="navbar-brand">Navbar</a> -->
                 <div class="avatar row">
                     <div class="col-3 pr-1 pl-0">
@@ -27,8 +29,8 @@
                             style="width: 50px;height:50px ;" />
                     </div>
                     <div class="user-info col-5 name pl-0">
-                        <h6 >User Name</h6>
-                        <h6 >User Role</h6>
+                        <h6>User Name</h6>
+                        <h6>User Role</h6>
                     </div>
                 </div>
                 <form class="form-inline search">
@@ -36,14 +38,14 @@
                     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <div class="text-center">
-                    <img src="/images/tu-logo.png" class="img-fluid logo" style="width: 50px;height:50px ;" />
+                    <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
                 </div>
             </div>
 
 
         </nav>
         <div class="profil-box">
-            <div class="shadow bg-white rounded p-3">
+            <div class="shadow bg-white rounded">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Settings</a></li>
                     <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
@@ -52,9 +54,6 @@
         </div>
         <div class="content row bg-light">
             <ul class="col-2 sidebar list-group shadow-sm">
-                <div class="mb-4 mt-2 text-center">
-                    <img src="/images/tu-logo.png" class="img-fluid logo" style="width: 70px;height:70px ;" />
-                </div>
                 <li class="p-3 mb-2 list-group-item">
                     <a class="sidebar-link " href="/pages/index.html">
                         <i class='bx bxs-dashboard'></i><span>Dashboard</span>
@@ -169,7 +168,7 @@
                     <div id="file-uploade-1">
                         <div class="p-3 mb-5 mr-2 shadow bg-white rounded">
                             <h5>Upload File</h5>
-                            <form>
+                            <form class="bg-light p-3">
                                 <div class="form-group">
                                     <label for="exampleFormControlFile1">Upload file</label>
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -180,14 +179,9 @@
                     </div>
                     <div id="file-uploade-2">
                         <div class="p-3 mb-5 mr-2 shadow bg-white rounded">
-                            <h5>Upload File</h5>
-                            <div class="form-group custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                <label class="custom-file-label" for="inputGroupFile02"
-                                    aria-describedby="inputGroupFileAddon02">Choose file</label>
-                            </div>
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                            <h5>drop down</h5>
+                            <div class="form-group custom-upload-file">
+                                <input type="file" class="dropify" />
                             </div>
                         </div>
                     </div>
@@ -198,7 +192,7 @@
                                 <div class="d-flex justify-content-between">
                                     <h5>Upload File</h5><span class="btn add-file-upload">+</span>
                                 </div>
-                                <form>
+                                <form class="bg-light p-3">
                                     <div class="form-group">
                                         <label for="exampleFormControlFile1">Upload file</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1">
@@ -222,12 +216,25 @@
                     </div>
                     <div class="col form-group shadow bg-white rounded text-center p-2 m-1">
                         <label for="exampleFormControlSelect2">multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <select class="selectpicker" multiple title="Choose one of the following...">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
+                        </select>
+
+
+                    </div>
+                    <div class="col form-group shadow bg-white rounded text-center p-2 m-1">
+                        <label for="exampleFormControlSelect2">multiple select</label>
+                        <select class="form-control selectpicker" name="part" data-live-search="true" required>
+                            <option value="Select Part">Select Part</option>
+                            <option value="Part 1" data-tokens="Part 1">Part 1</option>
+                            <option value="Part 2" data-tokens="Part 2">Part 2</option>
+                            <option value="Part 3" data-tokens="Part 3">Part 3</option>
+                            <option value="Part 4" data-tokens="Part 4">Part 4</option>
+                            <option value="Part 5" data-tokens="Part 5">Part 5</option>
                         </select>
                     </div>
                 </div>
@@ -276,7 +283,15 @@
                             <label class="form-check-label" for="inlineradio5">5</label>
                         </div>
                     </form>
+                    <div class="col shadow bg-white rounded text-center p-3 ml-1">
+                            <div class="toggleBox">
+                              <input type="checkbox">
+                              <label for="" class="onbtn">ON</label>
+                              <label for="" class="ofbtn">Off</label>
+                            </div>
+                    </div>
                 </div>
+                   
                 <div class="buttons d-flex justify-content-between mt-5 shadow bg-white rounded p-4">
                     <button type="button" class="btn btn-primary">Submit</button>
                     <button type="button" class="btn btn-outline-primary">Submit</button>
@@ -302,8 +317,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
         <script src="/js/jquery-3.6.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/js/dropify.min.js"
+            integrity="sha512-5lwTm2lltwGLuFpI0jqcCxGS4Y7cJn3ylGb0BTJty5xGt2lqT9/efUhQV1dyOXpQ/PbvmE6EUP+zRIPGiccFng=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="/js/index.js"></script>
+        <script>$('.dropify').dropify({
+                messages: {
+                    'default': 'Drag and drop a file here or click',
+                    'replace': 'Drag and drop or click to replace',
+                    'remove': 'Remove',
+                    'error': 'Ooops, something wrong happended.'
+                }
+            });</script>
 </body>
 
 </html>

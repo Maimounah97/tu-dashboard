@@ -9,9 +9,9 @@ body {
     height: 100%;
 }
 
-.navbar {
+/* .navbar {
     background-image: linear-gradient(to right, white, rgb(179, 218, 250));
-}
+} */
 
 .user-info{
     padding-top: 8px;
@@ -40,7 +40,7 @@ i {
     margin-top: 5%;
     z-index: 1;
     position: absolute;
-    left: 22%;
+    left: 2%;
 }
 .profil-box>div {
     display: none;
@@ -60,11 +60,11 @@ i {
 }
 
 .sidebar {
-    display: none;
+    /* display: none; */
     width: 200px;
     padding-top: 100px;
     height: 100%;
-    background-image: linear-gradient(to right, white, rgb(236, 246, 254));
+    /* background-image: linear-gradient(to right, white, rgb(236, 246, 254)); */
 }
 
 .sidebar i {
@@ -102,12 +102,13 @@ i {
     color: #aaa;
 }
 
+
 .registration-form {
     display: none;
 }
-/* .registration-form .login-form {
+.registration-form, .login-form {
    width: 300px;
-} */
+}
 .error-page{
     margin: auto;
 }
@@ -117,3 +118,72 @@ i {
 .time-line{
     display: none;
 }
+#file-uploade-1>div , #file-uploade-2>div , #file-uploade-3>div{
+    height: 300px;
+}
+p{
+    font-size:medium;
+}
+.date-time{
+   margin: auto;
+    font-size:x-small;
+}
+
+.toggleBox>input[type="checkbox"] {
+    position: relative;
+    width: 90px;
+    height: 35px;
+    background: #bdc3c7;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
+    transition: .4s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .toggleBox>input:checked[type="checkbox"] {
+    background: #3498db;
+  }
+  
+  .toggleBox>input[type="checkbox"]::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .4s;
+  }
+  
+  .toggleBox>input:checked[type="checkbox"]::before {
+    left: 51px;
+  }
+  
+  .toggleBox{
+    position: relative;
+    display: inline;
+  }
+  
+  .toggleBox>label {
+    position: absolute;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  
+  .onbtn {
+    bottom: 0px;
+    left: 5px;
+  }
+  
+  .ofbtn {
+    bottom: 0px;
+    right: 10px;
+    color: #34495e;
+  }
