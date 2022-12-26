@@ -20,7 +20,7 @@ $(document).ready(function () {
         $(".registration-form").hide()
         $(".login-form").animate({ hight: 'toggle' });
     });
-    $(".dropdown-toggle").on('click', function () {
+    $(".forms").on('click', function () {
         console.log("form clicked")
         $(".menu").animate({ hight: 'toggle' });
     })

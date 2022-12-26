@@ -13,90 +13,114 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
-    <div class="page">
-        <nav class="navbar navbar-light bg-light shadow-sm">
-            <div class="container">
-                <!-- <a class="navbar-brand">Navbar</a> -->
-                <div class="avatar row">
-                    <div class="col-3 pr-1 pl-0">
-                        <img src="/images/avatar.png" class="rounded-circle img-fluid"
-                            style="width: 50px;height:50px ;" />
-                    </div>
-                    <div class="user-info col-5 name pl-0">
-                        <h6 >User Name</h6>
-                        <h6 >User Role</h6>
-                    </div>
+<body style="height: 220%;">
+    <nav class="navbar navbar-light bg-light shadow-sm bg-dark">
+        <div class="container">
+            <!-- <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- <a class="navbar-brand">Navbar</a> -->
+            <div class="avatar row">
+                <div class="col-3 pr-1 pl-0">
+                    <img src="/images/user-solid-60.png" class="rounded-circle img-fluid" />
                 </div>
-                <form class="form-inline search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <div class="text-center">
-                    <img src="/images/tu-logo.png" class="img-fluid logo" style="width: 50px;height:50px ;" />
+                <div class="user-info col-5 name pl-0">
+                    <h6>User Name</h6>
+                    <h6>User Role</h6>
                 </div>
             </div>
-
-
-        </nav>
-        <div class="profil-box">
-            <div class="shadow bg-white rounded">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Settings</a></li>
-                    <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
-                </ul>
+            <form class="form-inline search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="text-center">
+                <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
             </div>
+
         </div>
-        <div class="content row bg-light">
-            <ul class="col-2 sidebar list-group shadow-sm">
-                <li class="p-3 mb-2 list-group-item">
-                    <a class="sidebar-link " href="/pages/index.html">
-                        <i class='bx bxs-dashboard'></i><span>Dashboard</span>
-                    </a>
+
+
+    </nav>
+    <div class="profil-box mb-4">
+        <div class="shadow bg-dark rounded">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center bg-dark"><a href="/pages/formsInputs.html">Settings</a></li>
+                <li class="list-group-item text-center bg-dark"><a href="/pages/login.html">Sign in</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="page row bg-light">
+            <ul class="col-2 sidebar shadow-sm bg-dark">
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
+                        <a class="sidebar-link text-light " href="/pages/index.html">
+                            <i class='bx bxs-dashboard text-light'></i><span>Dashboard</span>
+                        </a>
+                    </div>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
-                    <a class="sidebar-link" href="#0">
-                        <i class='bx bx-bar-chart-alt'></i><span>Statistics</span>
-                    </a>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1 active">
+                        <a class="sidebar-link text-light" href="/pages/statistics.html">
+                            <i class='bx bx-bar-chart-alt text-light'></i><span>Statistics</span>
+                        </a>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
-                    <a class="sidebar-link" href="/pages/calendar.html">
-                        <i class='bx bx-calendar'></i><span>Calendar</span>
-                    </a>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
+                        <a class="sidebar-link text-light" href="/pages/calendar.html">
+                            <i class='bx bx-calendar text-light'></i><span>Calendar</span>
+                        </a>
+                    </div>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
-                    <!-- <a class="sidebar-link" href="#0">
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
+                        <!-- <a class="sidebar-link" href="#0">
                     
                 </a> -->
-                    <a class="forms sidebar-link dropdown-toggle">
-                        <i class='bx bxs-layout'></i><span>Forms</span>
-                    </a>
+                        <a class="forms sidebar-link text-light d-flex justify-content-around mb-1">
+                            
+                            <div><i class='bx bxs-layout text-light'></i>Forms</div>
+                            
+                                <div class="pl-4 dropdown-toggle"></div>
+                            
+                        </a>
+                    </div>
+                    
                     <ul class="menu list-group list-group-flush">
-                        <li class="list-group-item text-center"><a href="/pages/formsInputs.html">Inputs</a></li>
-                        <li class="list-group-item text-center"><a href="/pages/layouts.html">Layouts</a></li>
-                        <li class="list-group-item text-center"><a href="/pages/login.html">Sign in</a></li>
-                        <li class="list-group-item text-center"><a href="/pages/login.html">Sign Up</a></li>
+                        <hr />
+                        <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light" href="/pages/formsInputs.html">Inputs</a>
+                        </li>
+                        <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light" href="/pages/layouts.html">Layouts</a></li>
+                        <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light" href="/pages/login.html">Sign in</a></li>
+                        <li class="sidebar-item text-center bg-dark rounded-pill"><a class="text-light" href="/pages/login.html">Sign Up</a></li>
+                        <hr />
                     </ul>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
-                    <a class="sidebar-link" href="/pages/fonts.html">
-                        <i class='bx bxs-edit'></i><span>Fonts</span>
-                    </a>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
+                        <a class="sidebar-link text-light" href="/pages/fonts.html">
+                            <i class='bx bxs-edit text-light'></i><span>Fonts</span>
+                        </a>
+                    </div>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
-                    <a class="sidebar-link" href="/pages/tables.html">
-                        <i class='bx bx-table'></i><span>Tables</span>
-                    </a>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
+                        <a class="sidebar-link text-light" href="/pages/tables.html">
+                            <i class='bx bx-table text-light'></i><span>Tables</span>
+                        </a>
+                    </div>
                 </li>
-                <li class="p-3 mb-2 list-group-item">
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
 
-                    <a class="sidebar-link" href="/pages/settings.html">
-                        <i class='bx bxs-cog'></i><span>Settings</span>
-                    </a>
+                        <a class="sidebar-link text-light" href="/pages/settings.html">
+                            <i class='bx bxs-cog text-light'></i><span>Settings</span>
+                        </a>
+                    </div>
                 </li>
 
             </ul>
-            <div class="col-8 container mb-4">
+            <div class="col-10 content px-0">
+                <div class="container mb-4 px-5">
                 <div class="row mt-5">
                     <div class="col p-3 mb-5 mr-2 shadow bg-white rounded w-50">
                         <div>
@@ -137,12 +161,13 @@
                     </div>
                 </div>
             </div>
+            <footer class="page-footer bg-white text-center footer-position">
+                <div class="footer-copyright text-center py-3">
+                    Taibah University - Deanship of Information Technology © 2022
+                </div>
+            </footer>
         </div>
-        <footer class="page-footer bg-white text-center footer-position">
-            <div class="footer-copyright text-center py-3">
-                Taibah University - Deanship of Information Technology © 2022
-            </div>
-        </footer>
+        </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
 
