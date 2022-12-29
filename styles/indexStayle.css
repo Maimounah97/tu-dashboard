@@ -21,6 +21,9 @@ body {
     /* background-image: linear-gradient(to right, white, rgb(205, 211, 215)); */
     z-index: 1;
 }
+.navbar-toggler{
+    display: none;
+}
 .user-info {
     padding-top: 8px;
 }
@@ -37,6 +40,9 @@ footer {
 }
 .search {
     margin-left: -50px;
+}
+.dropdown-toggle{
+    padding-left: 30px;
 }
 .avatar {
     width: 250px;
@@ -208,5 +214,37 @@ p {
 .navbar {
     padding: 0;
   }
-  
+ 
+  @media screen and (max-width: 480px) {
+    .sidebar {
+        width: 100px;
+      display: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-item {
+        padding: 0;
+        margin: 0;
+      }
+      .dropdown-toggle{
+        padding-left:0;
+    }
+      .sidebar-link span{
+        display: none;
+      }
+    .search input{
+        width: 80px;
+    }
+    .search button{
+        width: 60;
+        margin-left: 5px;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .sidebar-item:hover , .active {
+        padding-left: 5px;
+        background-image: linear-gradient(to right, rgb(179, 218, 250),rgb(3, 142, 188),rgb(179, 218, 250));
+    }
+  }  
   

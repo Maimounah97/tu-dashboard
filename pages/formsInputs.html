@@ -7,15 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/css/dropify.min.css"
         integrity="sha512-1le5umV712TnW47Lwf6Ug6kkZk1g6rPGOREBLKG8SvrFCNuCYPlCwwxIXBmRsi0q2BTWvbOrHiHfz0LvkX+1VA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/styles/indexStayle.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.min.css"
+        integrity="sha512-3JRrEUwaCkFUBLK1N8HehwQgu8e23jTH4np5NHOmQOobuC4ROQxFwFgBLTnhcnQRMs84muMh0PnnwXlPq5MGjg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body style="height: 165%;">
@@ -38,6 +45,9 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="text-center">
                 <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
             </div>
@@ -83,9 +93,9 @@
                 </a> -->
                     <a class="forms sidebar-link text-light d-flex justify-content-around mb-1">
 
-                        <div><i class='bx bxs-layout text-light'></i>Forms</div>
+                        <i class='bx bxs-layout text-light'></i><span>Forms</span>
 
-                        <div class="pl-4 dropdown-toggle"></div>
+                        <div class="dropdown-toggle"></div>
 
                     </a>
                 </div>
@@ -118,14 +128,14 @@
                     </a>
                 </div>
             </li>
-            <li class="p-3 mb-2">
+            <!-- <li class="p-3 mb-2">
                 <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
 
                     <a class="sidebar-link text-light" href="/pages/settings.html">
                         <i class='bx bxs-cog text-light'></i><span>Settings</span>
                     </a>
                 </div>
-            </li>
+            </li> -->
 
         </ul>
         <div class="col-10 content px-0">
@@ -175,18 +185,23 @@
                     </div>
                     <div class="col p-3 mb-5 mr-2 shadow bg-white rounded">
                         <h5>Date & Time</h5>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInput">Date</label>
-                                <input type="text" class="form-control datetimepicker">
+                        <div class="form-group">
+                            <label for="exampleInput">Date & Time Picker</label>
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                    data-target="#datetimepicker1" />
+                                <div class="input-group-append" data-target="#datetimepicker1"
+                                    data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar date-time-picker"></i></div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="col p-3 mb-5 shadow bg-white rounded">
                         <h5>Date & Time</h5>
                         <form>
                             <div class="form-group">
-                                <label for="exampleInput">Date</label>
+                                <label for="exampleInput">Time</label>
                                 <input type="time" class="form-control date-1">
                             </div>
                         </form>
@@ -335,31 +350,41 @@
                 </div>
             </footer>
         </div>
-    </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-    <script src="/js/jquery-3.6.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/js/dropify.min.js"
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/js/dropify.min.js"
+                integrity="sha512-5lwTm2lltwGLuFpI0jqcCxGS4Y7cJn3ylGb0BTJty5xGt2lqT9/efUhQV1dyOXpQ/PbvmE6EUP+zRIPGiccFng=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script>$('.dropify').dropify({
+                    messages: {
+                        'default': 'Drag and drop a file here or click',
+                        'replace': 'Drag and drop or click to replace',
+                        'remove': 'Remove',
+                        'error': 'Ooops, something wrong happended.'
+                    }
+                });</script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+        <script src="/js/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"
+            integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA=="
+            crossorigin="anonymous"></script>
+        
+        <script src="/js/index.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.0/js/dropify.min.js"
         integrity="sha512-5lwTm2lltwGLuFpI0jqcCxGS4Y7cJn3ylGb0BTJty5xGt2lqT9/efUhQV1dyOXpQ/PbvmE6EUP+zRIPGiccFng=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/index.js"></script>
-    <script>$('.dropify').dropify({
-            messages: {
-                'default': 'Drag and drop a file here or click',
-                'replace': 'Drag and drop or click to replace',
-                'remove': 'Remove',
-                'error': 'Ooops, something wrong happended.'
-            }
-        });</script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
 </body>
 
 </html>

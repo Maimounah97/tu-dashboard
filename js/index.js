@@ -1,10 +1,20 @@
 $(document).ready(function () {
-    // $('.selectpicker').selectpicker();
+            
+    // $(".date-time-picker").click(function () {
+    //     $('#datetimepicker1').datetimepicker();
+    // })
+    
+    // $('.selectpicker2').selectpicker();
     // $(".navbar-toggler").click(function () {
     //     console.log("navbar-toggler clicked")
     //     $(".sidebar").animate({ width: 'toggle' });
 
     // });
+
+   $('.navbar-toggler').click(function(){
+    console.log("navbar-toggler clicked")
+        $(".sidebar").toggle();
+   })
     $(".avatar").click(function () {
         console.log("avatar clicked")
         $(".profil-box").children().slideToggle("slow");
@@ -32,12 +42,12 @@ $(document).ready(function () {
 
     $(".task-form").on("submit", function (e) {
         e.preventDefault()
-        if (($(".title").val() == "") && ($(".date").val() == "") && ($(".time").val() == "") && ($(".people").val() == "")) {
+        if (($(".title").val() == "") && ($(".datetimepicker-input").val() == "") && ($(".people").val() == "")) {
             console.log("wrong submit")
         }
         else {
             console.log("successful submit")
-            $(".time-line").append("<li class='task shadow bg-white rounded m-2 p-2'><h5 class='task-title'>" + $(".title").val() + "</h5><h6 class='date-time'>" + $(".date").val() + " " + $(".time").val() + "</h6></li>")
+            $(".time-line").append("<li class='task shadow bg-white rounded m-2 p-2'><h5 class='task-title'>" + $(".title").val() + "</h5><h6 class='date-time'>" + $(".datetimepicker-input").val() + "</h6></li>")
             $(".time-line").show();
         }
 
@@ -50,7 +60,16 @@ $(document).ready(function () {
         $(".password-validation").append("<p>test</p>")
     }
 
-        const barChart = document.getElementById('bar-chart');
+        
+        // doughnutChart2.width = 100;
+        // doughnutChart2.height = 100;
+        // doughnutChart2.resize();
+
+        $('#datetimepicker1').datetimepicker(); 
+        
+    });
+
+    const barChart = document.getElementById('bar-chart');
         const pieChart = document.getElementById('pie-chart');
         const lineChart = document.getElementById('line-chart');
         const doughnutChart1 = document.getElementById('doughnut-chart-1');
@@ -190,12 +209,6 @@ $(document).ready(function () {
             }
         });
 
-        // doughnutChart2.width = 100;
-        // doughnutChart2.height = 100;
-        // doughnutChart2.resize();
-
-
-    });
 
 
 
