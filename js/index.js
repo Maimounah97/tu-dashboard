@@ -14,12 +14,31 @@ $(document).ready(function () {
    $('.navbar-toggler').click(function(){
     console.log("navbar-toggler clicked")
         $(".sidebar").toggle();
-   })
+        $(".content").toggle();
+        }
+        );
     $(".avatar").click(function () {
         console.log("avatar clicked")
         $(".profil-box").children().slideToggle("slow");
 
     });
+    $(".forms").on('click', function () {
+        console.log("form clicked")
+        $(".menu").animate({ hight: 'toggle' });
+    })
+
+    // var new_avatar = $("#new-avatar").val()
+    // $(".avatar").replaceWith($("#new-avatar").val())
+
+    $(".personal-information").on("submit", function (e) {
+            e.preventDefault()
+            console.log("successful submit")
+            $(".avatar-col").html("<img src="+$(".new-avatar").val()+" class='avatar-img rounded-circle img-fluid' />")
+            $(".user-name").text($("#userName").val())
+            
+    })
+
+    // console.log(new_avatar)
     $(".signUp-link").click(function () {
         console.log("signUp-link clicked")
         $(".login-form").hide()
@@ -30,10 +49,7 @@ $(document).ready(function () {
         $(".registration-form").hide()
         $(".login-form").animate({ hight: 'toggle' });
     });
-    $(".forms").on('click', function () {
-        console.log("form clicked")
-        $(".menu").animate({ hight: 'toggle' });
-    })
+    
 
     $(".multible-file-uploade").on('click', '.add-file-upload', function () {
         var file_uploaded = $('#file-uploade-3').html()
@@ -47,7 +63,7 @@ $(document).ready(function () {
         }
         else {
             console.log("successful submit")
-            $(".time-line").append("<li class='task shadow bg-white rounded m-2 p-2'><h5 class='task-title'>" + $(".title").val() + "</h5><h6 class='date-time'>" + $(".datetimepicker-input").val() + "</h6></li>")
+            $(".time-line").append("<li class='task shadow bg-white rounded m-2 p-2 w-75'><h5 class='task-title'>" + $(".title").val() + "</h5><h6 class='date-time'>" + $(".datetimepicker-input").val() + "</h6></li>")
             $(".time-line").show();
         }
 

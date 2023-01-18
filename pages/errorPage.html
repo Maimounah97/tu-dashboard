@@ -20,11 +20,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button> -->
             <!-- <a class="navbar-brand">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="avatar row">
                 <div class="col-3 pr-1 pl-0">
-                    <img src="/images/user-solid-60.png" class="rounded-circle img-fluid" />
+                    <img src="/images/user-solid-60.png" class="avatar-img rounded-circle img-fluid" />
                 </div>
-                <div class="user-info col-5 name pl-0">
+                <div class="user-info col name pl-0">
                     <h6>User Name</h6>
                     <h6>User Role</h6>
                 </div>
@@ -33,10 +36,7 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
             </form>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="text-center">
+            <div class="text-center logo-nav">
                 <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
             </div>
 
@@ -47,88 +47,78 @@
     <div class="profil-box mb-4">
         <div class="shadow bg-dark rounded">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center bg-dark"><a href="/pages/formsInputs.html">Settings</a></li>
-                <li class="list-group-item text-center bg-dark"><a href="/pages/login.html">Sign in</a></li>
+                <li class="list-group-item text-center bg-dark"><a class="text-light" href="/pages/formsInputs.html">Settings</a></li>
+                <li class="list-group-item text-center bg-dark"><a class="text-light" href="/pages/login.html">Sign in</a></li>
             </ul>
         </div>
     </div>
-    <div class="page row bg-light">
-        <ul class="col-2 sidebar shadow-sm bg-dark">
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <a class="sidebar-link text-light " href="/pages/index.html">
-                        <i class='bx bxs-dashboard text-light'></i><span>Dashboard</span>
-                    </a>
+    <div class="page bg-light">
+        <div class="sidebar bg-dark">
+            <ul class="shadow-sm mx-auto">
+                <div class="text-center logo-sidebar mb-4 mt-2">
+                    <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
                 </div>
-            </li>
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <a class="sidebar-link text-light" href="/pages/statistics.html">
-                        <i class='bx bx-bar-chart-alt text-light'></i><span>Statistics</span>
-                    </a>
-            </li>
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <a class="sidebar-link text-light" href="/pages/calendar.html">
-                        <i class='bx bx-calendar text-light'></i><span>Calendar</span>
-                    </a>
-                </div>
-            </li>
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <!-- <a class="sidebar-link" href="#0">
-                    
-                </a> -->
-                    <a class="forms sidebar-link text-light d-flex justify-content-around mb-1">
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="sidebar-link text-light " href="/pages/index.html">
+                            <i class='bx bxs-dashboard text-light pl-2 mr-2'></i><span>Dashboard</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="sidebar-link text-light" href="/pages/statistics.html">
+                            <i class='bx bx-bar-chart-alt text-light pl-2 mr-2'></i><span>Statistics</span>
+                        </a>
+                </li>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="sidebar-link text-light" href="/pages/calendar.html">
+                            <i class='bx bx-calendar text-light pl-2 mr-2'></i><span>Calendar</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="forms sidebar-link text-light mb-1">
+                            <i class='bx bxs-layout text-light pl-2 mr-2'></i><span>Forms</span>
+                            <span class="dropdown-toggle"></span>
+                        </a>
+                    </div>
 
-                        <i class='bx bxs-layout text-light'></i><span>Forms</span>
-
-                        <div class="dropdown-toggle"></div>
-
-                    </a>
-                </div>
-
-                <ul class="menu list-group list-group-flush">
-                    <hr />
-                    <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light"
-                            href="/pages/formsInputs.html">Inputs</a>
-                    </li>
-                    <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light"
-                            href="/pages/layouts.html">Layouts</a></li>
-                    <li class="sidebar-item text-center bg-dark rounded-pill pb-1"><a class="text-light"
-                            href="/pages/login.html">Sign in</a></li>
-                    <li class="sidebar-item text-center bg-dark rounded-pill"><a class="text-light"
-                            href="/pages/login.html">Sign Up</a></li>
-                    <hr />
-                </ul>
-            </li>
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <a class="sidebar-link text-light" href="/pages/fonts.html">
-                        <i class='bx bxs-edit text-light'></i><span>Fonts</span>
-                    </a>
-                </div>
-            </li>
-            <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-                    <a class="sidebar-link text-light" href="/pages/tables.html">
-                        <i class='bx bx-table text-light'></i><span>Tables</span>
-                    </a>
-                </div>
-            </li>
-            <!-- <li class="p-3 mb-2">
-                <div class="rounded-pill sidebar-item pt-1 pb-1 ml-1">
-
-                    <a class="sidebar-link text-light" href="/pages/settings.html">
-                        <i class='bx bxs-cog text-light'></i><span>Settings</span>
-                    </a>
-                </div>
-            </li> -->
-
-        </ul>
-        <div class="col-10 content px-0">
-            <div class="container w-50 mt-auto text-center">
-                <h1 class="font-weight-bolder mt-5">404</h1>
+                    <ul class="menu list-group list-group-flush" style="display: block;">
+                        <hr />
+                        <li class="sidebar-item ml-2 pl-3 bg-dark rounded-pill pb-1 mb-1"><a class="text-light"
+                                href="/pages/formsInputs.html">Inputs</a>
+                        </li>
+                        <li class="sidebar-item ml-2 pl-3 bg-dark rounded-pill pb-1 mb-1"><a class="text-light"
+                                href="/pages/layouts.html">Layouts</a></li>
+                        <li class="sidebar-item ml-2 pl-3 bg-dark rounded-pill pb-1 mb-1"><a class="text-light"
+                                href="/pages/login.html">Login</a></li>
+                        <li class="sidebar-item ml-2 pl-3 bg-dark rounded-pill  active"><a class="text-light"
+                                href="/pages/errorPage.html">Errore Page</a></li>
+                        <hr />
+                    </ul>
+                </li>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="sidebar-link text-light" href="/pages/fonts.html">
+                            <i class='bx bxs-edit text-light pl-2 mr-2'></i><span>Fonts</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="p-3 mb-2">
+                    <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
+                        <a class="sidebar-link text-light" href="/pages/tables.html">
+                            <i class='bx bx-table text-light pl-2 mr-2'></i><span>Tables</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content px-0">
+            <div class="container w-50 mt-5 text-center">
+                <h1 class="font-weight-bolder">404</h1>
                 <h1 class="font-weight-light mt-4 mb-4">Page Not Found</h1>
                 <a href="/pages/index.html" class="btn btn-dark rounded-pill">Back To Home</a>
             </div>
