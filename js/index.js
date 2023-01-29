@@ -33,8 +33,9 @@ $(document).ready(function () {
     $(".personal-information").on("submit", function (e) {
             e.preventDefault()
             console.log("successful submit")
-            $(".avatar-col").html("<img src="+$(".new-avatar").val()+" class='avatar-img rounded-circle img-fluid' />")
+            // $(".personal-information").append("<img src="+new_avatar[0]+" class='avatar-img rounded-circle img-fluid' />")
             $(".user-name").text($("#userName").val())
+            $(".user-position").text($("#position").val())
             
     })
 
