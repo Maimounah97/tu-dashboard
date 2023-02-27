@@ -245,6 +245,9 @@ p {
  .change-avatar{
     margin-left: -15px;
  }
+ .doughnut-charts{
+    width: 450px;
+ }
  @media screen and (max-width: 1000px) {
     .calendar{
         flex-direction: column;
@@ -373,6 +376,10 @@ p {
     }
     .horizontal-form,.vertical-form{
         width: 97%;
+     }
+     .doughnut-charts{
+        width: 200px;
+        text-align: center;
      }
     
   }  

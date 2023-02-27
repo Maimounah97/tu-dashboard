@@ -91,6 +91,7 @@ $(document).ready(function () {
         const lineChart = document.getElementById('line-chart');
         const doughnutChart1 = document.getElementById('doughnut-chart-1');
         const doughnutChart2 = document.getElementById('doughnut-chart-2');
+        const doughnutChart3 = document.getElementById('doughnut-chart-3');
         const bubbleChart = document.getElementById('bubble-chart');
 
 
@@ -174,6 +175,24 @@ $(document).ready(function () {
             }
         });
         new Chart(doughnutChart2, {
+            type: 'doughnut',
+            data: {
+                // labels: [
+                //     'Red',
+                //     'Blue',
+                // ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50],
+                    backgroundColor: [
+                        'rgb(47, 131, 247)',
+                        'rgb(236, 246, 254)',
+                    ],
+                    hoverOffset: 2
+                }]
+            },
+        });
+        new Chart(doughnutChart3, {
             type: 'doughnut',
             data: {
                 // labels: [
