@@ -92,6 +92,7 @@ $(document).ready(function () {
         const doughnutChart1 = document.getElementById('doughnut-chart-1');
         const doughnutChart2 = document.getElementById('doughnut-chart-2');
         const doughnutChart3 = document.getElementById('doughnut-chart-3');
+        const doughnutChart4 = document.getElementById('doughnut-chart-4');
         const bubbleChart = document.getElementById('bubble-chart');
 
 
@@ -165,7 +166,7 @@ $(document).ready(function () {
             data: {
                 datasets: [{
                     label: 'My First Dataset',
-                    data: [300, 100],
+                    data: [100,10],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
                         'rgb(236, 246, 254)',
@@ -183,7 +184,7 @@ $(document).ready(function () {
                 // ],
                 datasets: [{
                     label: 'My First Dataset',
-                    data: [300, 50],
+                    data: [100, 90],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
                         'rgb(236, 246, 254)',
@@ -201,7 +202,25 @@ $(document).ready(function () {
                 // ],
                 datasets: [{
                     label: 'My First Dataset',
-                    data: [300, 50],
+                    data: [100, 40],
+                    backgroundColor: [
+                        'rgb(47, 131, 247)',
+                        'rgb(236, 246, 254)',
+                    ],
+                    hoverOffset: 2
+                }]
+            },
+        });
+        new Chart(doughnutChart4, {
+            type: 'doughnut',
+            data: {
+                // labels: [
+                //     'Red',
+                //     'Blue',
+                // ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [100, 80],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
                         'rgb(236, 246, 254)',

@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>TU Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/tu-logo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -14,20 +15,21 @@
 </head>
 
 <body style="height: 220%;">
- <nav class="navbar navbar-light bg-light shadow-sm bg-dark">
+    <nav class="navbar navbar-dark bg-dark shadow-sm bg-dark">
         <div class="container">
             <!-- <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button> -->
             <!-- <a class="navbar-brand">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="avatar row">
-                <div class="col-3 pr-1 pl-0">
+                <div class="col pr-1 pl-0">
                     <img src="/images/user-solid-60.png" class="avatar-img rounded-circle img-fluid" />
                 </div>
-                <div class="user-info col name pl-0">
+                <div class="col-6 user-info name pl-0">
                     <h6 class="user-name">User Name</h6>
                     <h6 class="user-position">User Role</h6>
                 </div>
@@ -47,8 +49,10 @@
     <div class="profil-box mb-4">
         <div class="shadow bg-dark rounded">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center bg-dark"><a class="text-light" href="/pages/formsInputs.html">Settings</a></li>
-                <li class="list-group-item text-center bg-dark"><a class="text-light" href="/pages/login.html">Sign in</a></li>
+                <li class="list-group-item text-center bg-dark"><a class="text-light"
+                        href="/pages/formsInputs.html">Settings</a></li>
+                <li class="list-group-item text-center bg-dark"><a class="text-light" href="/pages/login.html">Sign
+                        in</a></li>
             </ul>
         </div>
     </div>
@@ -124,70 +128,84 @@
             </ul>
         </div>
         <div class="content">
-                <div class="container px-5 mb-4">
+            <div class="container px-5 mb-4">
                 <div class="row mt-5">
-                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded w-50">
-                        <div>
-                            <canvas id="pie-chart"></canvas>
-                          </div>
-                    </div>
-                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded">
-                        <div>
-                            <canvas id="bar-chart"></canvas>
-                          </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded w-50">
-                        <div>
-                            <canvas id="line-chart"></canvas>
-                          </div>
-                    </div>
-                    <div class="col p-3 mb-5 mr-2 shadow bg-white rounded">
-                        <div class="mx-auto doughnut-charts">
-                        <div class="row" >
-                            <canvas class="col-lg-4 col-md-4 col-sm-12" id="doughnut-chart-1"></canvas>
-                            <canvas class="col-lg-4 col-md-4 col-sm-12" id="doughnut-chart-2"></canvas>
-                            <canvas class="col-lg-4 col-md-4 col-sm-12" id="doughnut-chart-3"></canvas>
-                          </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
+                            <div>
+                                <canvas class="mx-auto" id="pie-chart"></canvas>
+                            </div>
                         </div>
-                          <!-- <div>
-                             <canvas class="col" id="doughnut-chart-2"></canvas> 
-                          </div> -->
-                        
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1">
+                            <div class="row mx-auto">
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
+                                    <canvas id="doughnut-chart-1"></canvas>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
+                                    <canvas id="doughnut-chart-2"></canvas>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
+                                    <canvas id="doughnut-chart-3"></canvas>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
+                                    <canvas id="doughnut-chart-4"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row mt-5">
-                    <div class="col-12 p-3 mb-5 mr-2 shadow bg-white rounded w-50">
-                        <div>
-                            <canvas id="bubble-chart"></canvas>
-                          </div>
-                       
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
+                            <div style="margin: auto;">
+                                <canvas id="line-chart"></canvas>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
+                            <div>
+                                <canvas id="bar-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="shadow bg-white rounded mb-5 p-1" >
+                    <div>
+                        <canvas id="bubble-chart"></canvas>
+                    </div>
+                    </div>
+
                 </div>
             </div>
-            <footer class="page-footer bg-white text-center footer-position">
-                <div class="footer-copyright text-center py-3">
-                    Taibah University - Deanship of Information Technology © 2022
-                </div>
-            </footer>
         </div>
-        </div>
+        <footer class="page-footer bg-white text-center footer-position">
+            <div class="footer-copyright text-center py-3">
+                Taibah University - Deanship of Information Technology © 2022
+            </div>
+        </footer>
+    </div>
+    </div>
 
-        <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
-        <script src="/js/jquery-3.6.1.min.js"></script>
-        
-          
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="/js/index.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.1.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
