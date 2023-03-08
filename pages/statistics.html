@@ -14,38 +14,29 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body style="height: 220%;">
+<body>
     <nav class="navbar navbar-dark bg-dark shadow-sm bg-dark">
-        <div class="container">
-            <!-- <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- <a class="navbar-brand">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="avatar row">
-                <div class="col pr-1 pl-0">
-                    <img src="/images/user-solid-60.png" class="avatar-img rounded-circle img-fluid" />
-                </div>
-                <div class="col-6 user-info name pl-0">
-                    <h6 class="user-name">User Name</h6>
-                    <h6 class="user-position">User Role</h6>
-                </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon  text-light"></span>
+        </button>
+        <div class="avatar row">
+            <div class="col">
+                <img src="/images/user-solid-60.png" class="avatar-img rounded-circle img-fluid" />
             </div>
-            <form class="form-inline search">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <div class="text-center logo-nav">
-                <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
+            <div class="col-6 user-info name pl-0 mt-2">
+                <h6 class="user-name text-light">User Name</h6>
+                <h6 class="user-position text-light">User Role</h6>
             </div>
-
         </div>
-
-
-    </nav>
+        <form class="form-inline search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="text-center logo-nav mr-2">
+            <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
+        </div>
+</nav>
     <div class="profil-box mb-4">
         <div class="shadow bg-dark rounded">
             <ul class="list-group list-group-flush">
@@ -58,7 +49,7 @@
     </div>
     <div class="page bg-light">
         <div class="sidebar bg-dark">
-            <ul class="shadow-sm mx-auto">
+            <ul class="shadow-sm mx-auto mt-5">
                 <div class="text-center logo-sidebar mb-4 mt-2">
                     <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
                 </div>
@@ -86,7 +77,7 @@
                     <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
                         <a class="forms sidebar-link text-light mb-1">
                             <i class='bx bxs-layout text-light pl-2 mr-2'></i><span>Forms</span>
-                            <span class="dropdown-toggle"></span>
+                            <span class="dropdown-toggle pl-4"></span>
                         </a>
                     </div>
 
@@ -127,8 +118,8 @@
                 </li>
             </ul>
         </div>
-        <div class="content">
-            <div class="container px-5 mb-4">
+        <div class="content w-100">
+            <div class="container mb-5">
                 <div class="row mt-5">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
@@ -139,18 +130,26 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="shadow bg-white rounded mb-5 p-1">
-                            <div class="row mx-auto">
-                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
-                                    <canvas id="doughnut-chart-1"></canvas>
+                            <div class="row" style="margin: auto;">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
+                                        <canvas id="doughnut-chart-1"></canvas>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
-                                    <canvas id="doughnut-chart-2"></canvas>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
+                                        <canvas id="doughnut-chart-2"></canvas>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
-                                    <canvas id="doughnut-chart-3"></canvas>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
+                                        <canvas id="doughnut-chart-3"></canvas>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12" style="height: 150px; width: 150px;">
-                                    <canvas id="doughnut-chart-4"></canvas>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
+                                        <canvas id="doughnut-chart-4"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +183,8 @@
                 </div>
             </div>
         </div>
-        <footer class="page-footer bg-white text-center footer-position">
-            <div class="footer-copyright text-center py-3">
+        <footer class="bg-white text-center footer-position">
+            <div class="text-center py-3">
                 Taibah University - Deanship of Information Technology © 2022
             </div>
         </footer>

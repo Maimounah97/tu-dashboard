@@ -18,8 +18,11 @@ $(document).ready(function () {
         }
         );
     $(".avatar").click(function () {
+        var wd = screen.width;
         console.log("avatar clicked")
-        $(".profil-box").children().slideToggle("slow");
+        if (wd>500){
+            $(".profil-box").children().slideToggle("slow");
+        }
 
     });
     $(".forms").on('click', function () {

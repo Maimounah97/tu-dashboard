@@ -16,33 +16,29 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark shadow-sm bg-dark">
-        <div class="container">
-            <!-- <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- <a class="navbar-brand">Navbar</a> -->
+        <!-- <div class="container"> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon  text-light"></span>
             </button>
             <div class="avatar row">
-                <div class="col pr-1 pl-0">
+                <div class="col">
                     <img src="/images/user-solid-60.png" class="avatar-img rounded-circle img-fluid" />
                 </div>
-                <div class="col-6 user-info name pl-0">
-                    <h6 class="user-name">User Name</h6>
-                    <h6 class="user-position">User Role</h6>
+                <div class="col-6 user-info name pl-0 mt-2">
+                    <h6 class="user-name text-light">User Name</h6>
+                    <h6 class="user-position text-light">User Role</h6>
                 </div>
             </div>
             <form class="form-inline search">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
             </form>
-            <div class="text-center logo-nav">
+            <div class="text-center logo-nav mr-2">
                 <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
             </div>
 
-        </div>
+        <!-- </div> -->
 
 
     </nav>
@@ -58,7 +54,7 @@
     </div>
     <div class="page bg-light">
         <div class="sidebar bg-dark">
-            <ul class="shadow-sm mx-auto">
+            <ul class="shadow-sm mx-auto mt-5">
                 <div class="text-center logo-sidebar mb-4 mt-2">
                     <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
                 </div>
@@ -86,7 +82,7 @@
                     <div class="rounded-pill sidebar-item pt-1 pb-1 pl-4">
                         <a class="forms sidebar-link text-light mb-1">
                             <i class='bx bxs-layout text-light pl-2 mr-2'></i><span>Forms</span>
-                            <span class="dropdown-toggle"></span>
+                            <span class="dropdown-toggle pl-4"></span>
                         </a>
                     </div>
 
@@ -127,10 +123,10 @@
                 </li>
             </ul>
         </div>
-        <div class="content px-0">
-            <div class="container px-5 mb-4">
+        <div class="content w-100">
+            <div class="container mb-5">
                 <div class="row mt-5">
-                    <div class="col">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5 text-center" style="min-height: 300px;">
                             <div class="bg-light p-2 mt-3 rounded">
                                 <h2 class="mt-auto p-3">50</h2>
@@ -138,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5 text-center" style="min-height: 300px;">
                             <div class="bg-light p-2 mt-3 rounded">
                                 <h2 class="mt-auto p-3">200</h2>
@@ -148,7 +144,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded mb-5" style="min-height: 300px;">
-                            <div>
+                            <div style="max-height: 98%; max-width: 98%;">
                                 <canvas class="mx-auto" id="pie-chart"></canvas>
                             </div>
                         </div>
