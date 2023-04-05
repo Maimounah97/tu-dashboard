@@ -1,16 +1,4 @@
 $(document).ready(function () {
-            
-    // $(".date-time-picker").click(function () {
-    //     $('#datetimepicker1').datetimepicker();
-    // })
-    
-    // $('.selectpicker2').selectpicker();
-    // $(".navbar-toggler").click(function () {
-    //     console.log("navbar-toggler clicked")
-    //     $(".sidebar").animate({ width: 'toggle' });
-
-    // });
-
    $('.navbar-toggler').click(function(){
     console.log("navbar-toggler clicked")
         $(".sidebar").toggle();
@@ -20,8 +8,9 @@ $(document).ready(function () {
     $(".avatar").click(function () {
         var wd = screen.width;
         console.log("avatar clicked")
-        if (wd>500){
+        if (wd>635){
             $(".profil-box").children().slideToggle("slow");
+            $(".sidebar").toggleClass('pt-5')
         }
 
     });
@@ -30,19 +19,13 @@ $(document).ready(function () {
         $(".menu").animate({ hight: 'toggle' });
     })
 
-    // var new_avatar = $("#new-avatar").val()
-    // $(".avatar").replaceWith($("#new-avatar").val())
-
     $(".personal-information").on("submit", function (e) {
             e.preventDefault()
             console.log("successful submit")
-            // $(".personal-information").append("<img src="+new_avatar[0]+" class='avatar-img rounded-circle img-fluid' />")
             $(".user-name").text($("#userName").val())
             $(".user-position").text($("#position").val())
             
     })
-
-    // console.log(new_avatar)
     $(".signUp-link").click(function () {
         console.log("signUp-link clicked")
         $(".login-form").hide()
@@ -79,11 +62,6 @@ $(document).ready(function () {
     if (password != confirmPassword) {
         $(".password-validation").append("<p>test</p>")
     }
-
-        
-        // doughnutChart2.width = 100;
-        // doughnutChart2.height = 100;
-        // doughnutChart2.resize();
 
         $('#datetimepicker1').datetimepicker(); 
         
@@ -126,7 +104,7 @@ $(document).ready(function () {
                     'Yellow'
                 ],
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Progress',
                     data: [300, 50, 100],
                     backgroundColor: [
                         'rgb(3, 30, 69)',
@@ -142,21 +120,16 @@ $(document).ready(function () {
             data: {
                 labels: [
                     'January',
-                    'February',
                     'March',
-                    'April',
                     'May',
-                    'June',
                     'July',
-                    'August',
                     'September',
-                    'October',
                     'November',
                     'December'
                 ],
                 datasets: [{
-                    label: 'My First Dataset',
-                    data: [65, 59, 80, 81, 56, 55, 10, 80, 90, 85, 70, 30, 0, 10],
+                    label: 'Progress',
+                    data: [ 59, 80, 81, 56, 10, 85, 70],
                     fill: false,
                     borderColor: 'rgb(47, 131, 247)',
                     tension: 0.1
@@ -168,7 +141,7 @@ $(document).ready(function () {
             type: 'doughnut',
             data: {
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Progress',
                     data: [100,10],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
@@ -186,7 +159,7 @@ $(document).ready(function () {
                 //     'Blue',
                 // ],
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Progress',
                     data: [100, 90],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
@@ -204,7 +177,7 @@ $(document).ready(function () {
                 //     'Blue',
                 // ],
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Progress',
                     data: [100, 40],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
@@ -222,7 +195,7 @@ $(document).ready(function () {
                 //     'Blue',
                 // ],
                 datasets: [{
-                    label: 'My First Dataset',
+                    label: 'Progress',
                     data: [100, 80],
                     backgroundColor: [
                         'rgb(47, 131, 247)',
@@ -236,7 +209,7 @@ $(document).ready(function () {
             type: 'bubble',
             data: {
                 datasets: [{
-                    label: 'First Dataset',
+                    label: 'Progress',
                     data: [{
                         x: 20,
                         y: 30,

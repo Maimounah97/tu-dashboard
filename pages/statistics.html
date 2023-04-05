@@ -119,36 +119,36 @@
             </ul>
         </div>
         <div class="content w-100">
-            <div class="container mb-5">
+            <div class="container-md mb-5">
                 <div class="row mt-5">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
-                            <div>
-                                <canvas class="mx-auto" id="pie-chart"></canvas>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1" style="height: 320px;">
+                            <div class="">
+                                <canvas class="mx-auto" id="pie-chart" style="max-height: 270px; max-width: 270px;"></canvas>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="shadow bg-white rounded mb-5 p-1">
-                            <div class="row" style="margin: auto;">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
-                                        <canvas id="doughnut-chart-1"></canvas>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="shadow bg-white rounded mb-5 p-1" style="height: 320px;">
+                            <div class="row align-items-center" style="margin: auto;">
+                                <div class="col-6">
+                                    <div class="mx-auto" >
+                                        <canvas class="doughnut-chart mx-auto" id="doughnut-chart-1" ></canvas>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
-                                        <canvas id="doughnut-chart-2"></canvas>
+                                <div class="col-6">
+                                    <div class="mx-auto">
+                                        <canvas class="doughnut-chart mx-auto" id="doughnut-chart-2" ></canvas>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
-                                        <canvas id="doughnut-chart-3"></canvas>
+                                <div class="col-6">
+                                    <div class="mx-auto">
+                                        <canvas class="doughnut-chart mx-auto" id="doughnut-chart-3" ></canvas>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="mx-auto" style="max-height: 150px; max-width: 150px;">
-                                        <canvas id="doughnut-chart-4"></canvas>
+                                <div class="col-6">
+                                    <div class="mx-auto">
+                                        <canvas class="doughnut-chart mx-auto" id="doughnut-chart-4" ></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -157,17 +157,17 @@
                     
                 </div>
                 <div class="row mt-5">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
                             <div style="margin: auto;">
-                                <canvas id="line-chart"></canvas>
+                                <canvas id="line-chart" style="min-height: 200px;"></canvas>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="shadow bg-white rounded mb-5 p-1" style="min-height: 300px;">
                             <div>
-                                <canvas id="bar-chart"></canvas>
+                                <canvas id="bar-chart" style="min-height: 200px;"></canvas>
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,8 @@
         crossorigin="anonymous"></script>
     <script src="/js/jquery-3.6.1.min.js"></script>
 
-
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/js/index.js"></script>
 </body>

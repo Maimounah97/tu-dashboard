@@ -6,7 +6,7 @@ html {
     height: 100%;
 }
 body {
-    min-height: 100%;
+    height: 100%;
 }
 .page {
     min-height: 100%;
@@ -149,17 +149,14 @@ p {
 .change-avatar {
     margin-left: -15px;
 }
-.doughnut-charts {
-    width: 450px;
+.doughnut-chart{
+    width: 150px;
+    height: 150px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 635px) {
     nav,
     .page {
         width: 100%;
-    }
-    .profil-box {
-        width: 100px;
-        left:0
     }
     .search {
         display: none;
@@ -207,8 +204,8 @@ p {
         display: block;
         margin-left: auto;
     }
-    .doughnut-charts {
-        width: 200px;
-        text-align: center;
+    .doughnut-chart{
+        max-width: 100px;
+        max-height: 100px;
     }
 }
