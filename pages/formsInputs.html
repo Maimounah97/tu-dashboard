@@ -41,8 +41,7 @@
             </div>
         </div>
         <form class="form-inline search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" id="searchTheKey" placeholder="Search" aria-label="Search">
         </form>
         <div class="text-center logo-nav mr-2">
             <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
@@ -134,7 +133,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="height: 130px;">
-                            <h5>Inputs</h5>
+                            <h5 class="search-item">Inputs</h5>
                             <form>
                                 <div class="form-group">
                                     <input type="text" class="form-control input-1" placeholder="Input">
@@ -144,7 +143,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="height: 130px;">
-                            <h5>Inputs</h5>
+                            <h5 class="search-item">Inputs</h5>
                             <form>
                                 <div class="form-group">
 
@@ -157,7 +156,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="height: 130px;">
-                            <h5>Inputs</h5>
+                            <h5 class="search-item">Inputs</h5>
                             <form>
                                 <div class="form-group">
 
@@ -172,7 +171,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Date</h5>
+                            <h5 class="search-item">Date</h5>
                             <form>
                                 <div class="form-group">
                                     <input type="date" class="form-control date-1">
@@ -182,7 +181,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Date&Time</h5>
+                            <h5 class="search-item">Date&Time</h5>
                             <div class="form-group">
 
                                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
@@ -199,7 +198,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Time</h5>
+                            <h5 class="search-item">Time</h5>
                             <form>
                                 <div class="form-group">
 
@@ -212,7 +211,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="height: 270px;">
-                            <h5>Upload File</h5>
+                            <h5 class="search-item">Upload File</h5>
                             <form class="bg-light p-3">
                                 <div class="form-group">
                                     <label for="exampleFormControlFile1">Upload file</label>
@@ -224,7 +223,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12" id="file-uploade-2">
                         <div class="shadow bg-white rounded p-3 mb-5" style="height: 270px;">
-                            <h5>drop down</h5>
+                            <h5 class="search-item">Drop Down</h5>
                             <div class="form-group custom-upload-file">
                                 <input type="file" class="dropify" />
                             </div>
@@ -234,7 +233,7 @@
                         <div id="file-uploade-3">
                             <div class="col p-3 mb-5 shadow bg-white rounded" style="height: 270px;">
                                 <div class="d-flex justify-content-between">
-                                    <h5>Upload File</h5><span class="btn add-file-upload">+</span>
+                                    <h5 class="search-item">Upload File</h5><span class="btn add-file-upload">+</span>
                                 </div>
                                 <form class="bg-light p-3">
                                     <div class="form-group">
@@ -249,8 +248,9 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="form-group shadow bg-white rounded text-center p-3 mb-5">
-                            <label for="exampleFormControlSelect1">select</label>
+                        <div class="shadow bg-white rounded p-3 mb-5" style="height: 150px;">
+                        <h5 class="search-item">Select</h5>
+                        <div class="form-group">
                             <select class="form-control" id="exampleFormControlSelect1">
                                 <option>1</option>
                                 <option>2</option>
@@ -260,9 +260,11 @@
                             </select>
                         </div>
                     </div>
+                    </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="form-group shadow bg-white rounded text-center p-3 mb-5">
-                            <label for="exampleFormControlSelect2">multiple select</label>
+                        <div class="shadow bg-white rounded p-3 mb-5" style="height: 150px;">
+                            <h5 class="search-item">Multiple Select</h5>
+                        <div class="form-group">
                             <select class="selectpicker" multiple title="Choose one of the following...">
                                 <option>1</option>
                                 <option>2</option>
@@ -273,9 +275,11 @@
 
                         </div>
                     </div>
+                    </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="form-group shadow bg-white rounded text-center p-3 mb-5">
-                            <label for="exampleFormControlSelect2">multiple select</label>
+                        <div class="shadow bg-white rounded p-3 mb-5" style="height: 150px;">
+                            <h5 class="search-item">Multiple Select with Search</h5>
+                        <div class="form-group">
                             <select class="form-control selectpicker" name="part" data-live-search="true" required>
                                 <option value="Select Part">Select Part</option>
                                 <option value="Part 1" data-tokens="Part 1">Part 1</option>
@@ -285,11 +289,15 @@
                                 <option value="Part 5" data-tokens="Part 5">Part 5</option>
                             </select>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <form class="shadow bg-white rounded text-center p-3 mb-5" style="height:90px; margin: auto;">
+                        <div class="shadow bg-white rounded p-3 ml-1 mb-5" style="height:120px;">
+                            <h5 class="search-item">Check Box</h5>
+                            <br />
+                        <form>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" name="checkbox" type="checkbox" id="inlineCheckbox1"
                                     value="option1">
@@ -316,9 +324,13 @@
                                 <label class="form-check-label" for="inlineCheckbox5">5</label>
                             </div>
                         </form>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <form class="shadow bg-white rounded text-center p-3 ml-1 mb-5" style="height:90px; margin: auto;">
+                        <div class="shadow bg-white rounded p-3 ml-1 mb-5" style="height:120px; margin: auto;">
+                            <h5 class="search-item">Radio</h5>
+                            <br />
+                        <form>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" name="radio" type="radio" id="inlineradio1"
                                     value="option1">
@@ -344,19 +356,26 @@
                                     value="option5">
                                 <label class="form-check-label" for="inlineradio5">5</label>
                             </div>
+                        </div>
                         </form>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="shadow bg-white rounded text-center p-3 ml-1 mb-5" style="height:90px;">
+                        <div class="shadow bg-white rounded p-3 ml-1 mb-5" style="height:120px;">
+                            <h5 class="search-item">Toggle Box</h5>
+                            <br />
+                            <div class="text-center">
                             <div class="toggleBox" style=" margin: auto;">
                                 <input type="checkbox">
                                 <label for="" class="onbtn"></label>
                                 <label for="" class="ofbtn"></label>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="mt-5 shadow bg-white rounded p-4">
+                    <h5 class="search-item">Buttons</h5>
+                    <br />
                     <div class="row text-center">
                         <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                             <button type="button" class="btn btn-primary rounded-pill w-50">Submit</button>

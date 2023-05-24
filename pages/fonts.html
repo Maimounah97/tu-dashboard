@@ -30,8 +30,7 @@
             </div>
         </div>
         <form class="form-inline search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" id="searchTheKey" placeholder="Search" aria-label="Search">
         </form>
         <div class="text-center logo-nav mr-2">
             <img src="/images/tu-logo.png" class="img-fluid logo" style="height:50px ;" />
@@ -124,7 +123,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Title(32px):</h5>
+                            <h5 class="search-item">Title(32px):</h5>
                             <div class="bg-light p-2 mt-3 rounded  text-center">
                                 <h1 class="">Title</h1>
                             </div>
@@ -132,7 +131,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Title(32px):</h5>
+                            <h5 class="search-item">Title(32px):</h5>
                             <div class="bg-light p-2 mt-3 rounded  text-center">
                                 <h1 class="font-italic">Title</h1>
                             </div>
@@ -140,7 +139,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Title(32px):</h5>
+                            <h5 class="search-item">Title(32px):</h5>
                             <div class="bg-light p-2 mt-3 rounded  text-center">
                                 <h1 class="font-weight-light">Title</h1>
                             </div>
@@ -151,7 +150,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Subtitle(24px):</h5>
+                            <h5 class="search-item">Subtitle(24px):</h5>
                             <div class="bg-light p-2 mt-3 rounded text-center">
                                 <h3 class="">Title</h3>
                             </div>
@@ -159,7 +158,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Subtitle(24px):</h5>
+                            <h5 class="search-item">Subtitle(24px):</h5>
                             <div class="bg-light p-2 mt-3 rounded text-center">
                                 <h3 class="font-italic">Title</h3>
                             </div>
@@ -167,7 +166,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5">
-                            <h5>Subtitle(24px):</h5>
+                            <h5 class="search-item">Subtitle(24px):</h5>
                             <div class="bg-light p-2 mt-3 rounded text-center">
                                 <h3 class="font-weight-light">Title</h3>
                             </div>
@@ -178,7 +177,7 @@
                 <div class="row mt-5">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="min-height: 250px;">
-                            <h5>Paragraph(16px):</h5>
+                            <h5 class="search-item">Paragraph(16px):</h5>
                             <div class="bg-light p-2 mt-3 rounded">
                                 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus culpa,
                                     nam
@@ -189,7 +188,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="shadow bg-white rounded p-3 mb-5" style="min-height: 250px;">
-                            <h5>Paragraph(16px):</h5>
+                            <h5 class="search-item">Paragraph(16px):</h5>
                             <div class="bg-light p-2 mt-3 rounded">
                                 <p class="font-weight-light font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus culpa,
                                     nam
@@ -204,7 +203,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="shadow bg-white rounded p-3 mb-5">
-                                <h5>Date:</h5>
+                                <h5 class="search-item">Date:</h5>
                                 <div class="bg-light p-2 mt-3 rounded text-center">
                                     <p class="date-time">2023-01-01</p>
                                 </div>
@@ -212,7 +211,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="shadow bg-white rounded p-3 mb-5">
-                                <h5>Date:</h5>
+                                <h5 class="search-item">Date:</h5>
                                 <div class="bg-light p-2 mt-3 rounded text-center">
                                     <p class="date-time">January 1, 2023</p>
                                 </div>
@@ -220,7 +219,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="shadow bg-white rounded p-3 mb-5">
-                                <h5>Time:</h5>
+                                <h5 class="search-item">Time:</h5>
                                 <div class="bg-light p-2 mt-3 rounded text-center">
                                     <p class="date-time">8:35 AM</p>
                                 </div>
@@ -228,7 +227,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="shadow bg-white rounded p-3 mb-5">
-                                <h5>Date and Time:</h5>
+                                <h5 class="search-item">Date and Time:</h5>
                                 <div class="bg-light p-2 mt-3 rounded text-center">
                                     <p class="date-time">2023-01-01 8:45
                                     </p>

@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    $("#searchTheKey").on('keyup', function(){
+        var value = $(this).val().toLowerCase();
+        $(".search-item").each(function () {
+           if ($(this).text().toLowerCase().search(value) > -1) {
+              $(this).show();
+              $(this).parentsUntil( ".row" ).show();
+           } else {
+              $(this).parentsUntil( ".row" ).hide();
+           }
+        });
+     }) 
    $('.navbar-toggler').click(function(){
     console.log("navbar-toggler clicked")
         $(".sidebar").toggle();
